@@ -47,7 +47,6 @@ To install the required libraries, run:
 ```bash
 pip install pandas numpy scikit-learn xgboost tensorflow keras matplotlib seaborn flask
 ```
-
 ## Dataset
 
 We have simulated an e-commerce dataset containing product prices, competitor prices, customer interest, sales volume, and more. This dataset is used to train and test our machine learning models.
@@ -58,3 +57,30 @@ We have simulated an e-commerce dataset containing product prices, competitor pr
 |------------|-------|------------------|--------------|-------------------|-------------|-----------------|
 | 1          | 32.45 | 30.10            | 245          | 654               | High        | 150             |
 | 2          | 55.78 | 54.30            | 134          | 540               | Medium      | 210             |
+
+## Exploratory Data Analysis
+
+We performed Exploratory Data Analysis (EDA) to visualize relationships between the product price, competitor price, and sales volume. Key insights were obtained from:
+
+- Scatter plots between Price and Sales Volume
+- Line plots for Competitor Price vs Sales Volume
+- Histogram showing the distribution of sales volumes
+
+## Feature Engineering
+
+We enhanced our dataset with additional features to improve model accuracy:
+
+- **Lag Features**: Historical sales volume (`Sales_Lag1`)
+- **Rolling Averages**: Smoothed sales data (`Sales_Rolling_3`)
+- **Dummy Variables**: Convert Seasonality to numeric form
+
+## Modeling
+
+Three different models were implemented to predict sales volume based on various features:
+
+### 1. Linear Regression
+A basic linear regression model was used as the baseline model.
+
+```python
+from sklearn.linear_model import LinearRegression
+```
