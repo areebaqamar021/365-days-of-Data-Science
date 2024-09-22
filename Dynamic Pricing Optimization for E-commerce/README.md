@@ -165,3 +165,12 @@ curl -X POST -H "Content-Type: application/json" \
 -d '{"features": [50, 48, 400, 300, 20, 50, 1, 0]}' \
 http://localhost:5000/predict_price
 ```
+### Contributing
+Contributions are welcome! If you'd like to collaborate or suggest improvements:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m "Add some feature"`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a pull request
+
