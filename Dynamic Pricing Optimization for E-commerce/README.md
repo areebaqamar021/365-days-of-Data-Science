@@ -145,7 +145,7 @@ This **Flask API** can be used to integrate real-time pricing into an e-commerce
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/dynamic-pricing-optimization.git
+git clone https://github.com/areebaqamar021/dynamic-pricing-optimization.git
 cd dynamic-pricing-optimization
 ```
 ### 2.Run Jupyter Notebook:
