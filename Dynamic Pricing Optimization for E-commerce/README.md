@@ -91,7 +91,7 @@ A more advanced tree-based model, Random Forest, was used for better prediction 
 from sklearn.ensemble import RandomForestRegressor
 ```
 ### 3. Neural Network
-We implemented a Neural Network using Keras with TensorFlow backend to capture complex relationships in the data.
+We implemented a **Neural Network** using **Keras** with TensorFlow backend to capture complex relationships in the data.
 
 ```python
 from keras.models import Sequential
@@ -99,6 +99,7 @@ from keras.layers import Dense
 ```
 
 ## Optimization Strategies
+
 We employed Profit Maximization as an optimization strategy. The profit is calculated as:
 ```python
 Profit = (Price - Cost) * Sales_Volume
@@ -138,3 +139,29 @@ if __name__ == '__main__':
 ```
 
 This **Flask API** can be used to integrate real-time pricing into an e-commerce platform, allowing for dynamic price adjustments based on machine learning models.
+
+## How to Use
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/dynamic-pricing-optimization.git
+cd dynamic-pricing-optimization
+```
+### 2.Run Jupyter Notebook:
+Open the notebook in Jupyter and run each cell step by step.
+
+### 3. Start Flask API:
+To deploy the model as an API, run:
+
+```bash
+python app.py
+```
+### Make a POST Request: 
+You can use Postman or curl to test the API. Example:
+
+```bash
+curl -X POST -H "Content-Type: application/json" \
+-d '{"features": [50, 48, 400, 300, 20, 50, 1, 0]}' \
+http://localhost:5000/predict_price
+```
