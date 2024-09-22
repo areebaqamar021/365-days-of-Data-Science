@@ -60,7 +60,7 @@ We have simulated an e-commerce dataset containing product prices, competitor pr
 
 ## Exploratory Data Analysis
 
-We performed Exploratory Data Analysis (EDA) to visualize relationships between the product price, competitor price, and sales volume. Key insights were obtained from:
+We performed **Exploratory Data Analysis (EDA)** to visualize relationships between the product price, competitor price, and sales volume. Key insights were obtained from:
 
 - Scatter plots between Price and Sales Volume
 - Line plots for Competitor Price vs Sales Volume
