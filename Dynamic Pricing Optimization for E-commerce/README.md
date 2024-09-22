@@ -46,3 +46,14 @@ To install the required libraries, run:
 
 ```bash
 pip install pandas numpy scikit-learn xgboost tensorflow keras matplotlib seaborn flask
+```
+## Dataset
+
+We have simulated an e-commerce dataset containing product prices, competitor prices, customer interest, sales volume, and more. This dataset is used to train and test our machine learning models.
+
+### Sample Data
+
+| Product_ID | Price | Competitor_Price | Sales_Volume | Customer_Interest | Seasonality | Inventory_Level |
+|------------|-------|------------------|--------------|-------------------|-------------|-----------------|
+| 1          | 32.45 | 30.10            | 245          | 654               | High        | 150             |
+| 2          | 55.78 | 54.30            | 134          | 540               | Medium      | 210             |
