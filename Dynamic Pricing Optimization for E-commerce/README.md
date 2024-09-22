@@ -84,3 +84,25 @@ A basic linear regression model was used as the baseline model.
 ```python
 from sklearn.linear_model import LinearRegression
 ```
+### 2. Random Forest Regressor
+A more advanced tree-based model, Random Forest, was used for better prediction accuracy.
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+```
+### 3. Neural Network
+We implemented a Neural Network using Keras with TensorFlow backend to capture complex relationships in the data.
+
+```python
+from keras.models import Sequential
+from keras.layers import Dense
+```
+
+## Optimization Strategies
+We employed Profit Maximization as an optimization strategy. The profit is calculated as:
+```python
+Profit = (Price - Cost) * Sales_Volume
+```
+
+## Model Evaluation
+The models were evaluated using Mean Squared Error (MSE) and R2 Score. The results were as follows:
