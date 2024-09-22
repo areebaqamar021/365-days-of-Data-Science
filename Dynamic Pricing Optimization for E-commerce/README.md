@@ -103,6 +103,38 @@ We employed Profit Maximization as an optimization strategy. The profit is calcu
 ```python
 Profit = (Price - Cost) * Sales_Volume
 ```
-
 ## Model Evaluation
-The models were evaluated using Mean Squared Error (MSE) and R2 Score. The results were as follows:
+
+The performance of the models is evaluated using Mean Squared Error (MSE) and R² Score:
+
+| Model             | MSE    | R² Score |
+|-------------------|--------|----------|
+| Linear Regression | 345.12 | 0.78     |
+| Random Forest     | 256.34 | 0.85     |
+| Neural Network    | 214.45 | 0.89     |
+
+Visualizations such as **Actual vs Predicted Sales Volume** for each model were generated to compare their performances.
+
+## API Deployment
+
+We deployed the optimal pricing model using **Flask**. This API predicts the optimal price for a product in real-time based on the features provided.
+
+### Example Flask API Code
+
+```python
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/predict_price', methods=['POST'])
+def predict_price():
+    data = request.get_json()
+    features = [data['features']]
+    price_pred = rf_model.predict(features)
+    return jsonify({'optimal_price': price_pred[0]})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+This **Flask API** can be used to integrate real-time pricing into an e-commerce platform, allowing for dynamic price adjustments based on machine learning models.
