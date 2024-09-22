@@ -165,7 +165,7 @@ curl -X POST -H "Content-Type: application/json" \
 -d '{"features": [50, 48, 400, 300, 20, 50, 1, 0]}' \
 http://localhost:5000/predict_price
 ```
-### Contributing
+## Contributing
 Contributions are welcome! If you'd like to collaborate or suggest improvements:
 
 1. Fork the repository
